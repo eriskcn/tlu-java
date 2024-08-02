@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-Tricks</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+<body class="bg-gray-100">
+<header class="bg-[#121212] text-white">
+    <div class="container mx-auto py-4 px-6">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/50" alt="CSS-Tricks' logo" class="h-8">
+                <img src="https://via.placeholder.com/50" alt="Digital Ocean's logo" class="h-8">
+            </div>
+            <button class="block md:hidden text-gray-400 hover:text-white focus:outline-none">
+                <!-- Icon for mobile menu -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <nav class="mt-4 md:mt-0">
+            <ul class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-6">
+                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">ARTICLES</a></li>
+                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">VIDEOS</a></li>
+                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">ALMANAC</a></li>
+                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">NEWSLETTER</a></li>
+                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">GUIDES</a></li>
+                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">DIGITAL OCEAN</a></li>
+                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">DO COMMUNITY</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="md:hidden">
+        <nav>
+            <ul class="space-y-4 px-6 py-4">
+                <li><a href="#" class="block hover:text-gray-400">ARTICLES</a></li>
+                <li><a href="#" class="block hover:text-gray-400">VIDEOS</a></li>
+                <li><a href="#" class="block hover:text-gray-400">ALMANAC</a></li>
+                <li><a href="#" class="block hover:text-gray-400">NEWSLETTER</a></li>
+                <li><a href="#" class="block hover:text-gray-400">GUIDES</a></li>
+                <li><a href="#" class="block hover:text-gray-400">DIGITAL OCEAN</a></li>
+                <li><a href="#" class="block hover:text-gray-400">DO COMMUNITY</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+</body>
+</html>
