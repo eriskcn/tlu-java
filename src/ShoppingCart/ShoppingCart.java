@@ -113,7 +113,7 @@ public class ShoppingCart {
         for (Product product : cart.values()) {
             if (product.getPrice() > 1000) {
                 System.out.println(product);
-                count ++;
+                count++;
             }
         }
         if (count == 0) {
