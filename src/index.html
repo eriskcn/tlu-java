@@ -1,50 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSS-Tricks</title>
-    <script src="https://cdn.tailwindcss.com/"></script>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com/" ></script>
+    <title>Document</title>
 </head>
-<body class="bg-gray-100">
-<header class="bg-[#121212] text-white">
-    <div class="container mx-auto py-4 px-6">
-        <div class="flex items-center justify-between">
-            <div class="flex items-center space-x-4">
-                <img src="https://via.placeholder.com/50" alt="CSS-Tricks' logo" class="h-8">
-                <img src="https://via.placeholder.com/50" alt="Digital Ocean's logo" class="h-8">
-            </div>
-            <button class="block md:hidden text-gray-400 hover:text-white focus:outline-none">
-                <!-- Icon for mobile menu -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+<body>
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/BYOBw8uudhh
+-->
+
+<div class="min-h-screen flex flex-col items-center justify-between bg-gradient-to-b from-blue-500 to-blue-800 text-white">
+    <header class="w-full flex justify-between items-center p-6">
+        <div class="flex items-center space-x-2">
+            <img
+                    src="/placeholder.svg"
+                    alt="Logo"
+                    class="h-10 w-10"
+                    width="40"
+                    height="40"
+                    style="aspect-ratio: 40 / 40; object-fit: cover;"
+            />
+            <span class="text-2xl font-bold">hoaijn10</span>
         </div>
-        <nav class="mt-4 md:mt-0">
-            <ul class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-6">
-                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">ARTICLES</a></li>
-                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">VIDEOS</a></li>
-                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">ALMANAC</a></li>
-                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">NEWSLETTER</a></li>
-                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">GUIDES</a></li>
-                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">DIGITAL OCEAN</a></li>
-                <li><a href="#" class="block py-2 md:py-0 hover:text-gray-400">DO COMMUNITY</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="md:hidden">
-        <nav>
-            <ul class="space-y-4 px-6 py-4">
-                <li><a href="#" class="block hover:text-gray-400">ARTICLES</a></li>
-                <li><a href="#" class="block hover:text-gray-400">VIDEOS</a></li>
-                <li><a href="#" class="block hover:text-gray-400">ALMANAC</a></li>
-                <li><a href="#" class="block hover:text-gray-400">NEWSLETTER</a></li>
-                <li><a href="#" class="block hover:text-gray-400">GUIDES</a></li>
-                <li><a href="#" class="block hover:text-gray-400">DIGITAL OCEAN</a></li>
-                <li><a href="#" class="block hover:text-gray-400">DO COMMUNITY</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        <div class="space-x-4">
+            <a href="#" class="text-white" rel="ugc">
+                Sign Up
+            </a>
+            <a href="#" class="text-white" rel="ugc">
+                Sign In
+            </a>
+        </div>
+    </header>
+    <main class="flex flex-col items-center space-y-8">
+        <h1 class="text-3xl font-bold">Welcome Thang Lon g University!</h1>
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md text-gray-900">
+            <h2 class="text-center text-lg font-semibold mb-4">Sign in with</h2>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <button id="gg-btn" class="hover:scale-110 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+                    Google
+                </button>
+                <button id="gh-btn" class="hover:scale-110 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+                    GitHub
+                </button>
+                <button id="li-btn" class="hover:scale-110 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+                    LinkedIn
+                </button>
+                <button id="gl-btn" class="hover:scale-110 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+                    GitLab
+                </button>
+                <button id="bb-btn" class="hover:scale-110 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+                    BitBucket
+                </button>
+                <button id="ph-btn" class="hover:scale-110 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+                    PornHub
+                </button>
+            </div>
+            <div class="space-y-4">
+                <input
+                        class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
+                        placeholder="Email"
+                        type="email"
+                />
+                <input
+                        class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
+                        placeholder="Password"
+                        type="password"
+                />
+                <div class="flex items-center space-x-2">
+                    <button
+                            type="button"
+                            role="checkbox"
+                            aria-checked="false"
+                            data-state="unchecked"
+                            value="on"
+                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                            id="remember"
+                    ></button>
+                    <label for="remember" class="text-sm">
+                        Remember your account?
+                    </label>
+                </div>
+                <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 w-full bg-blue-500 text-white">
+                    Log In
+                </button>
+            </div>
+        </div>
+        <div class="flex justify-between w-full max-w-md text-sm text-gray-300">
+            <a href="#" rel="ugc">
+                Forgot password?
+            </a>
+            <a href="#" rel="ugc">
+                Create new account
+            </a>
+        </div>
+    </main>
+    <footer class="w-full p-6 text-center text-sm text-gray-300">
+        <div class="flex justify-between">
+            <span>© 2024 hoaijn10</span>
+            <div class="space-x-4">
+                <a href="#" rel="ugc">
+                    Hehe
+                </a>
+                <a href="#" rel="ugc">
+                    Hihi
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    const ggBtn = document.getElementById("gg-btn");
+    ggBtn.addEventListener("click", () => {
+       alert("Oke! Let try others!");
+    });
+
+    const ghBtn = document.getElementById("gh-btn");
+    ghBtn.addEventListener("click", () => {
+        alert("Oke! Let try others!");
+    });
+
+    const glBtn = document.getElementById("gl-btn");
+    glBtn.addEventListener("click", () => {
+        alert("Oke! Let try others!");
+    });
+
+    const liBtn = document.getElementById("li-btn");
+    liBtn.addEventListener("click", () => {
+        alert("Oke! Let try others!");
+    });
+
+    const bbBtn = document.getElementById("bb-btn");
+    bbBtn.addEventListener("click", () => {
+        alert("Oke! Let try others!");
+    });
+
+    const phBtn = document.getElementById("ph-btn");
+    phBtn.addEventListener("click", () => {
+        alert("Ái chà! Bắt quả tang có người xem sếch nhé!!!!");
+    });
+
+</script>
 </body>
 </html>
